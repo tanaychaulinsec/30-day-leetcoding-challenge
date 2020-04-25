@@ -6,5 +6,6 @@ class Solution:
                 return False
             maxJump-=1
             maxJump=max(maxJump,nums[i])
+            if i+maxJump>=len(nums): return True
         return True    
         
